@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="460.0" prefWidth="680.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.LogIndController">
+   <children>
+      <JFXTextField fx:id="txtFieldBrugernavn" alignment="CENTER" focusColor="WHITE" layoutX="215.0" layoutY="199.0" prefWidth="250.0" promptText="Brugernavn" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtFieldAdgangskode" alignment="CENTER" focusColor="WHITE" layoutX="215.0" layoutY="278.0" prefWidth="250.0" promptText="Adgangskode" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnLogInd" layoutX="269.0" layoutY="378.0" onAction="#logInd" prefHeight="31.0" prefWidth="136.0" style="-fx-background-color: gray;" text="Log ind" textFill="WHITE" />
+      <ImageView fx:id="imageViewEASV" fitHeight="118.0" fitWidth="566.0" layoutX="91.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Skole/SCO/Attendance/Billeder/ea-sydvest-logo.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="hyperLinkGlemtAdgangskode" layoutX="268.0" layoutY="332.0" text="Glemt Adgangskode" textFill="WHITE" />
+   </children>
+</AnchorPane>
